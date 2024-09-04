@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css.css">
+    <link rel="icon" href="/img/logo.svg">
+    <title>Frame cast</title>
+</head>
+<body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img class="logo-img" src="./img/logo.svg" alt="logo">
+          </a>
+
+          <input type="checkbox" name="menu-mobail" id="menu-mobail">
+          <label for="menu-mobail"><img src="./img/menu.png"></label>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#">Достижения</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#">Спонсоры</a>
+              </li>
+              <li class="header__list-items">
+                <a class="list-item" href="#">Ещё</a>
+
+
+                  <!--ВЫПАДАЮЩЕЕ МЕНЮ-->
+
+                    <button class="more--button" aria-expanded="false" aria-controls="list">
+                      <img class="arrow-img" src="/img/ArrowDown.svg">
+                    </button>
+                    <ul class="menu">
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Конкурс</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Статистика</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                      </li>
+                    </ul>
+              </li>
+            </ul>
+          </nav>
+
+           <div class="header__button">
+              <a href="#" class="button">Новинки</a>
+                 <button class="button subscribe--btn" id="open-modal">Войти</button>
+                  </div>
+                 </div>
+                </div>   
+         </header>
+
+         <!--МОДАЛЬНОЕ ОКНО-->
+         
+         <div class="modal" id="my-modal">
+          <div class="modal__body">
+            <div class="modal__inner">
+              <h2 class="modal-title">Регистрация</h2>
+                <form action="">
+                  <input type="text" placeholder="Логин" required>
+                  <input type="text" placeholder="Пароль" required>
+                  <button class="button modal--btn">Войти</button>
+
+                  <div class="modal-seting">
+                  <div class="remember-forgot">
+                    <label><input type="checkbox">Запомнить меня</label>
+                    <a href="#">Забыли пароль ?</a>
+                  </div>
+
+                <div class="register-link">
+                    <p>Не зарегистрированы ?
+                    <a href="#">Создать аккаунт</a></p>
+                </div>
+                  </div>
+                </form>
+                <div class="modal-close" id="close-modal">&#10006</div>
+            </div>
+          </div>
+         </div>
+
+            <main class="main">
+                <section class="group__main">                   
+                        <div class="container">
+                            <div class="group__inner">
+                                <h1 class="about__group"> FrameTamer <span>cast</span></h1>
+
+                        <div class="header__button header--mobail">
+                           <a href="#" class="button">Новинки</a>
+                            <button class="button subscribe--btn"         id="open-modal">Войти</button>
+                         </div>
+
+                                <p class="text__group">Здесь ты найдешь подкасты с известыми музыкантами, тик-токерами, продюссерами. На данный момент снято более 10 подкастов.</p>
+                        </div>
+                    </div>                   
+                </section>
+
+                <section class="menu__cards">
+                  <div class="container">
+                  <div class="menu__cards-achiev">
+                    <h4 class="menu__cards-title"> <span class="span-color">25</span>млн</h4>
+                    <p class="menu__cards-description">Просмотры</p>
+                  </div>
+                  <div class="menu__cards-achiev">
+                    <h4 class="menu__cards-title"> <span class="span-color">628</span>К</h4>
+                    <p class="menu__cards-description">Подписчики</p>
+                  </div>
+                  <div class="menu__cards-achiev">
+                    <h4 class="menu__cards-title"> <span class="span-color">59</span>К</h4>
+                    <p class="menu__cards-description">Прослушивания</p>
+                  </div>
+                </div>
+                </section>
+
+                <section class="best-podcast">
+                  <div class="container">
+                    <div class="best__podcast-inner">
+                    <h2 class="best-title">
+                     <span>8 миллионов !</span>
+                    </h2>
+                    <p class="best-description">
+                      Самый просматриваемый подкаст набрал более 8 млн просмотров !
+                    </p>
+                    <img class="best-picture" src="/img/best-podcast.png" alt="best">
+                    </div>
+                  </div>
+                </section>
+
+                <!-- BUSHIDO ZHO -->
+
+                <section class="libary-cards">
+                  <div class="podcast-card__title">
+                    <h2 class="podcast-title">Громкие новинки
+                    </h2>
+                  </div>
+                  <div class="container podcast--cont">
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/zhoas.png"
+                        alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            BUSHIDO ZHO
+                          </h3>
+                          <p class="podcast-description">
+                            Музыкант, чьи композиции способны взорвать каждую пятницу
+                          </p>
+                          <a href="https://youtu.be/kWKqYVKnt9w" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- YAN -->
+            
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/yan.png" alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            YAN
+                          </h3>
+                          <p class="podcast-description">
+                            Тик-Токер, чья харизма не имеет никакого предела
+                          </p>
+                          <a href="https://youtu.be/czFc_d2tp8I" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ROMANOV -->
+                    
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/romanov.png" alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            ROMANOV
+                          </h3>
+                          <p class="podcast-description">
+                            Гениальный продюссер, с клипами на миллионы просмотров
+                          </p>
+                          <a href="https://youtu.be/L3SbhTRM01c" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- KORESH -->
+                  
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/koresh.png" alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            KORESH
+                          </h3>
+                          <p class="podcast-description">
+                            Стример и главный участник распавшегося сквада - хозяева
+                          </p>
+                          <a href="https://youtu.be/RuEpuDQ1UV8" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- EXILE -->
+                    
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/exile.png" alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            EXILE
+                          </h3>
+                          <p class="podcast-description">
+                            Ютубер каждое видео которого привлечет к просмотру любого
+                          </p>
+                          <a href="https://youtu.be/pYZigRVSOXM" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- BUSTER -->
+                    
+                    <div class="podcast-card">
+                      <div class="podcast-top">
+                        <img class="pictures-img" src="/img/buster.png" alt="zhoas">
+                        <div class="podcast-bottom">
+                          <h3 class="podcast-bottom__title">
+                            BUSTER
+                          </h3>
+                          <p class="podcast-description">
+                            Стример, ютубер, музыкант, или же просто - buster
+                          </p>
+                          <a href="https://youtu.be/dPFBbF7Nq6I" target="_blank" class="button podcast--btn">Смотреть</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="guest">
+                  <div class="guest-title">
+                      <h2>Стань гостем</h2>
+                  </div>
+                  <div class="container">
+                    <div class="stay-guest">
+                      <div class="stay-guest__left">
+                        <div class="stay-guest__inner">
+                        <h3 class="title-guest">
+                          Прими участие на подкасте
+                        </h3>
+                        <p class="guest-description">
+                          Александр Frame Tamer запускает конкурс. Регистрируйся и получи возможность принять участие на съемках следующего подкаста, со своим кумиром и задать все интерисующие тебя вопросы, получи призы и просто испытай удовольствие.
+                        </p>
+                        <div class="guest-social">
+                          <a href="https://vk.com/frametamer1337" target="_blank">                     
+                          <img class="guest-vk" src="/img/vk.png" alt="vk">
+                          </a>
+                          <a href="https://web.telegram.org/k/#@oieiei" target="_blank">
+                          <img class="guest-tg" src="/img/tg.png" alt="tg">
+                          </a>
+                          <a href="https://www.youtube.com/@frametamer6" target="_blank">
+                          <img class="guest-yt" src="/img/yt.png" alt="yt">
+                          </a>
+                        </div>
+                        </div>
+                      </div>
+                          <img class="stay-guest__right" src="/img/tamer png.png" 
+                          alt="tamer-png">
+                    </div>
+                  </div>
+                </section>
+
+                <!-- СЛАЙДЕР -->
+                
+                <section class="slider">
+                  <div class="container">
+                    <h2 class="main-sponsor__title">Наши спонсоры</h2>
+                  <div class="wrapper">
+                    <img id="left" src="./img/ArrowLeft.png" alt="left" class="arrow-left">
+                    <ul class="carousel">
+                      <li class="card">
+                        <div class="sponsor-card-img">
+                          <img class="sponsor-img__full" src="./img/t-bank.webp" alt="t-bank" draggable="false">
+                        </div>
+                          <h2 class="sponsor-title">T-Bank</h2>
+                          <p class="sponsor-description">Т-банк - самый крупный банк в росии, с более чем 40млн человек и число продолжает рости</p>
+                          <div class="sponsor-button">
+                          <a href="https://www.tbank.ru/" class="button sponsor--btn" target="_blank">Перейти</a>
+                          </div>
+                      </li>
+
+                        <li class="card">
+                        <div class="sponsor-card-img">
+                          <img class="sponsor-img__full" src="./img/yandex-market.webp" alt="yandex-market" draggable="false"></div>                       
+                          <h2 class="sponsor-title">Yandex market</h2>
+                          <p class="sponsor-description">Яндекс маркет - сервис от компании яндекс в котром можно заказать все что тебе угодно</p>
+                          <div class="sponsor-button">
+                          <a href="https://market.yandex.ru/" class="button sponsor--btn" target="_blank">Перейти</a>
+                          </div>
+                        </li>
+
+                        <li class="card">
+                        <div class="sponsor-card-img">
+                          <img class="sponsor-img__full" src="./img/plus-sity.webp" alt="plus-sity" draggable="false">
+                        </div>                         
+                          <h2 class="sponsor-title">Plus city</h2>
+                          <p class="sponsor-description">Плюс сити - сервис (игра) от Яндекс в котором ты можешь построить собственный город</p>
+                          <div class="sponsor-button">
+                          <a href="https://plus-city.ru/" class="button sponsor--btn" target="_blank">Перейти</a>
+                          </div>
+                        </li>
+
+                        <li class="card">
+                        <div class="sponsor-card-img">
+                          <img class="sponsor-img__full" src="./img/Yota.webp" alt="Yota" draggable="false">
+                        </div>                     
+                          <h2 class="sponsor-title">Yota</h2>
+                          <p class="sponsor-description">Йота - телекоммуникационная компания с весьма выгодными тарифами</p>
+                          <div class="sponsor-button">
+                            <a href="https://www.yota.ru/" class="button sponsor--btn" target="_blank">Перейти</a>
+                          </div>
+                        </li>
+                        
+                        <li class="card">
+                        <div class="sponsor-card-img">
+                          <img class="sponsor-img__full" src="./img/twinby.webp" alt="twinby" draggable="false">
+                        </div>                       
+                          <h2 class="sponsor-title">Twinby</h2>
+                          <p class="sponsor-description">Твинби - приложение для знакомств в котором можно найти партнера по процентному сходству</p>
+                          <div class="sponsor-button">
+                          <a href="https://twinby.com/" class="button sponsor--btn" target="_blank">Перейти</a>
+                          </div>
+                      </li>
+                    </ul>
+                    <img id="right" src="./img/ArrowRight.png" alt="right" class="arrow-right">
+                  </div>
+                  </div>
+                </section>
+
+                <!-- FOOTER -->
+
+                <section class="footer">
+                  <div class="container">
+                    <div class="footer-logo">
+                       <img src="./img/logo.svg" alt="logo" class="footer-logo__img">
+                      <a href="#" class="footer-img">@2024</a>
+                      <!-- <p class="logo-description">Frame cast использует файлы «cookie», с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.</p> -->
+                    </div>
+                    <div class="footer-description">
+                      <nav class="footer-about">
+                        <ul class="footer-inner">
+                          <li class="footer-about__inner">
+                            <a href="#" class="about-item">О нас</a>
+                            <ul class="about-item__inner">
+                              <li class="item-inner">
+                                <a href="#" class="inner">Правила</a>
+                              </li>
+                              <li class="item-inner">
+                                <a href="#" class="inner">Условия</a>
+                              </li>
+                              <li class="item-inner">
+                                <a href="#" class="inner">Подробности</a>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="footer-about__inner">
+                            <a href="#" class="about-item">Компания</a>
+                            <ul class="about-item__inner">
+                              <li class="item-inner">
+                                <a href="#" class="inner">О компании</a>
+                              </li>
+                              <li class="item-inner">
+                                <a href="#" class="inner">Контакты</a>
+                              </li>
+                              <li class="item-inner">
+                                <a href="#" class="inner">Предложения</a>
+                              </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                    <p class="logo-description">Frame cast использует файлы «cookie», с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.</p>
+                    
+                      </div>
+                      
+                        <div class="footer-main__icons">
+                          <div class="footer-socials__title">
+                            <h3 class="socials-title">Связь с нами</h3>
+                          </div>
+                          <ul class="footer-icons">
+                            <li class="icons-main">
+                              <a href="#" class="footer-vk">
+                                <img src="./img/vk.png" alt="" class="footer-socials__img">
+                              </a>
+                            </li>
+                            <li class="icons-main">
+                              <a href="#" class="footer-yt">
+                                <img src="./img/yt.png" alt="" class="footer-socials__img">
+                              </a>
+                            </li>
+                            <li class="icons-main">
+                              <a href="#" class="footer-tg">
+                                <img src="./img/tg.png" alt="" class="footer-socials__img">
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="footer-mail">
+                            <a href="https://mail.google.com/mail/u/0/#search/tiktoktamer%40yandex.ru?compose=new" class="footer-mail__inner" target="_blank">tiktoktamer@yandex.ru</a>
+                          </div>
+                        </div>
+                      </nav>
+                  </div>
+                </section>
+            </main>
+
+<script src="./script/app.js"></script>
+</body>
+</html>

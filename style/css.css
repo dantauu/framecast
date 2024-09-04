@@ -1,0 +1,740 @@
+/* НАСТРОЙКИ СТРАНИЦЫ */
+
+html {
+  scrollbar-gutter: stable;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  max-width: 1205px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+} 
+
+img {
+  max-width: 100%;
+}
+
+body {
+ background: linear-gradient(90deg,#e5d2ed,#fceaff);
+ scrollbar-gutter: stable;
+}
+
+/* ШРИФТЫ */
+
+@font-face {
+    font-family: "Montserrat-B";
+    font-weight: 700;
+    font-style: normal;
+    src: local("MontserratAlternates-Bold"),
+      url("../fonts/MontserratAlternates-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat-M";
+    font-weight: 500;
+    font-style: normal;
+    src: local("MontserratAlternates-Medium"),
+      url("../fonts/MontserratAlternates-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Jost-R";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Jost-Regular"),
+      url("../fonts/Jost-Regular.woff") format("woff");
+}
+
+
+
+/* HEADER */
+
+.header__inner {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav .header__list {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__nav {
+  padding-right: 300px;
+}
+
+.header__list-item {
+  font-family: "Montserrat-B";
+  font-size: 16px;
+  color: #000;
+  transition: all .2s;
+}
+
+.header__list-item:hover {
+  color: #5b5b5b;
+}
+
+.header__list-items a {
+  font-family: "Montserrat-B";
+  font-size: 16px;
+  color: #000;
+}
+
+.list-item:hover {
+  color: #5b5b5b;
+  transition: all .3s;
+}
+
+.header__button {
+  font-family: "Montserrat-B";
+  font-size: 14px;
+}
+
+.button {
+  font-family: "Montserrat-B";
+  border: 2px solid;
+  border-radius: 14px;
+  padding: 12px 24px;
+}
+
+.subscribe--btn {
+  border: 2px solid ;
+  border-radius: 7px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 38px;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 85px;
+  min-width: 75px;
+}
+
+.arrow-img {
+    position: relative;
+    height: 21px;
+    top: 5px;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.modal.active {
+  display: block;
+  background-color: #6363639e;
+}
+
+.modal__body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__inner {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 15px 110px 15px;
+}
+
+.modal__inner input {
+  display: block;
+  margin: 25px auto 35px auto;
+  width: 330px;
+  padding: 17px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal-title {
+  position: relative;
+  bottom: 38px;
+  font-family: "Montserrat-B";
+
+}
+
+.modal--btn {
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.remember-forgot label input {
+ position: absolute;
+ top: -3px;
+ right: 195px;
+}
+
+.modal-seting {
+  position: relative;
+  padding-top: 20px;
+}
+
+
+/* СТИЛИЗАЦИЯ МЕНЮ */
+
+.more--button {
+  border: none;
+  background:fixed;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  line-height: 0;
+  overflow: hidden;
+  transition: line-height .5s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.menu__item a {
+  font-family: "Jost-R";
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #000;
+}
+
+.menu__link {
+  display: block;
+}
+
+.more--button.active ~ .menu {
+  line-height: 1.7;
+}
+
+/* MAIN */
+
+.main {
+  padding-top: 45px;
+}
+
+.group__main {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.about__group {
+  display: inline-block;
+  font-family: "Montserrat-B";
+  text-shadow: 0 0 7px #000;
+  font-size: 74px;
+  max-width: 649px;
+}
+
+.text__group {
+  display: inline-block;
+  max-width: 600px;
+  padding-top: 100px;
+  font-family: "Montserrat-M";
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/* СЕКЦИЯ ДОСТИЖЕНИЙ */
+
+.menu__cards .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px); 
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu__cards-achiev {
+  width: 100%;
+  height: 230px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 60px;
+  box-shadow: 0 0 12px #636363;
+}
+
+.menu__cards-title {
+  font-family: "Montserrat-B";
+  font-size: 60px;
+}
+
+.menu__cards-description {
+  font-family: "Montserrat-M";
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+span {
+  color: #fff;
+}
+
+.span-color {
+  color: rgb(115, 50, 119);
+  text-shadow: none;
+}
+
+/* СЕКЦИЯ ЛУЧШИЙ ПОДКАСТ */
+
+.best-podcast {
+  padding: 100px;
+  text-align: center;
+}
+
+.best-title {
+  font-size: 57px;
+  font-family: "Montserrat-B";
+  text-shadow: 0 0 3px #000;
+}
+
+.best-description {
+  font-size: 17px;
+  font-family: "Montserrat-M";
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.best-picture {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* СЕКЦИЯ С КАРТОЧКАМИ ПОДКАСТА */
+
+.libary-cards {
+  background-color: #e1c4eb;
+  padding-bottom: 25px;
+}
+
+.podcast-card__title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Montserrat-B";
+  font-size: 32px;
+  color: #fff ;
+  text-shadow: 0 0 3px #000;
+
+}
+
+.podcast-card { 
+  width: 276px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 12px #636363;
+}
+
+.podcast-description{
+  padding-bottom: 30px;
+  font-family: "Jost-R";
+}
+
+.podcast--cont {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.podcast-bottom {
+  text-align: center;
+}
+
+.podcast-bottom__title {
+  font-family: "Montserrat-B";
+}
+
+.podcast--btn {
+  cursor: pointer;
+  background-color: #000;
+  color: #c4c1c1;
+  border: none;
+}
+
+.pictures-img {
+  width: 276px;
+  height: 225px;
+  border-radius: 8px;
+}
+
+/* СЕКЦИЯ GUEST */
+
+.guest {
+  padding-top: 100px;
+}
+
+.guest-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat-B";
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+.stay-guest {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #fff,#cbcbcb);
+  box-shadow: 0 0 12px #636363;
+  border-radius: 12px;
+  height: 480px;
+}
+
+.stay-guest__left {
+  display: flex;
+  padding: 50px 0 0 35px ;
+}
+
+.title-guest {
+  font-family: "Montserrat-B";
+  font-size: 40px;
+
+}
+
+.guest-description {
+  font-family: "Jost-R";
+  max-width: 700px;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.guest-social {
+  display: flex;
+  padding-top: 125px;
+  gap: 20px;
+  width: 210px;
+}
+
+.stay-guest__right {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  left: 766px;
+  border-radius: 12px;
+}
+
+/* SPONSOR SLIDER */
+
+.slider {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 35px;
+  background-color: #e1c4eb;
+}
+
+.wrapper {
+  max-width: 940px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px );
+  gap: 16px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel .card {
+  height: 352px;
+  border-radius: 12px;
+  background-color: #e8e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.arrow-left {
+  height: 47px;
+  width: 47px;
+  background-color: #e8e6e6;
+  border-radius: 50%; 
+  cursor: pointer;
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px #636363;
+}
+
+.arrow-right {
+  height: 47px;
+  width: 47px;
+  background-color: #e8e6e6;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px #636363;
+} 
+
+.main-sponsor__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat-B";
+  font-size: 44px;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+.sponsor-title {
+  font-family: "Montserrat-B";
+  padding-bottom: 10px;
+}
+
+.sponsor-description {
+  max-width: 270px;
+  margin-bottom: 22px;
+  line-height: 19px;
+  font-family: "Jost-R";
+}
+
+.sponsor--btn {
+  background-color: #000;
+  color: #c4c1c1;
+  border: none;
+  cursor: pointer;
+}
+
+.card .sponsor-card-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  gap: 95px;
+}
+
+.logo-description {
+  text-align: center;
+  max-width: 550px;
+  padding-top: 45px;
+  line-height: 18px;
+  margin-left: 60px;
+  font-family: "Jost-R";
+}
+
+.about-item {
+  font-family: "Montserrat-B";
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.footer-socials__title {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-family: "Montserrat-B";
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials__img {
+  min-width: 43px;
+  height: 43px;
+}
+
+.footer-mail {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+/* АДАПТИВ */
+
+/* АДАПТИВ HEADER */
+
+.header--mobail {
+  display: none;
+}
+
+.header input {
+  display: none;
+}
+
+.header label {
+  width: 35px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 1180px) {
+  .header__button {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header--mobail {
+    display: block;
+  }
+}
+
+@media (max-width: 851px) {
+  .header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header .header__nav {
+    position: absolute;
+    top: 100px;
+    left: -1px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff36;
+    box-shadow: 0 0 10px #636363;
+    border-top: .1rem solid #00000082;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  .header__nav .header__list {
+    display: block;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 851px) {
+  .header input:checked ~ .header__nav {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* АДАПТИВ "СТАНЬ ГОСТЕМ" */
+
+@media (max-width: 1070px) {
+  .stay-guest__right {
+    display: none;
+  }
+}
+
+@media (max-width: 734px) {
+  .guest-social {
+    padding-top: 40px;
+  }
+}
+
+/* АДАПТИВ FOOTER */
+
+@media (max-width: 800px ) {
+  .footer-inner {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
